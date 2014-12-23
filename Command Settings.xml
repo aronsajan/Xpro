@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<CommandConfigurationEngine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CommandCollection>
+    <Command Name="Service" Handler="ServiceCommand.ServiceManager.ServiceCommandHandler, ServiceCommand" />
+	<Command Name="Set" Handler="Command.Set.CommandManager.SetCommandManager, Command.Set" />
+	<Command Name="Out" Handler="Command.Out.CommandManager.OutCommandManager, Command.Out" />
+	<Command Name="If" Handler="Command.IF.CommandManager.IFCommandManager, Command.IF" />
+	<Command Name="While" Handler="Command.While.CommandManager.WhileCommandManager, Command.While" />
+	
+  </CommandCollection>
+</CommandConfigurationEngine>
