@@ -1,0 +1,36 @@
+<Xpro OutputMethod="Console">
+  <Main>
+    <Set Variable="$x" Value="0" />
+    <While Expression="$x<1000">
+     
+      <Set Variable="$y" Value="1" />
+      <Set Variable="$count" Value="0" />
+      
+      <While Expression="$y<$x+1">
+        <Set Variable="$a" Value="$x%$y" />
+        <If Expression="$a>0">
+          <Pass>
+            <Set Variable="$p" Value="0" />
+
+          </Pass>
+          <Fail>
+            <Set Variable="$count" Value="$count+1" />
+          </Fail>
+        </If>
+
+        <Set Variable="$y" Value="$y+1" />
+      </While>
+
+      <If Expression="$count>2">
+        <Pass>
+          <Set Variable="$q" Value="0" />
+        </Pass>
+        <Fail>
+          <Out Value="$x" NewLine="true"/>
+        </Fail>
+      </If>
+
+      <Set Variable="$x" Value="$x+1" />
+    </While>
+  </Main>
+</Xpro>

@@ -1,0 +1,6 @@
+<Xpro OutputMethod="Console">
+<Main>
+<Set Variable="$x" Value="6" />
+<Out Value="$x+1" NewLine="true" />
+</Main>
+</Xpro>
